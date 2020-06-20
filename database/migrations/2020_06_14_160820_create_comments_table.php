@@ -21,7 +21,8 @@ class CreateCommentsTable extends Migration
             $table->string('Content');
             $table->timestamps();
             $table->foreign('User_id')->references('id')->on('users');
-            $table->foreign('Post_id')->references('id')->on('posts')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreign('Post_id')->references('id')->on('posts')->onDelete('cascade');
+            // (If error comments relation,then add): ->onUpdate('cascade')
 
 
         });
