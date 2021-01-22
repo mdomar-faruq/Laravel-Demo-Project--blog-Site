@@ -1,4 +1,4 @@
 #Laravel demo project
 #Use Some Crud Operation 
-#Diffrance type User
+#Admin Control
 #Relation Comment and Post
